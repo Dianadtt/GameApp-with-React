@@ -1,5 +1,5 @@
 import Game from './Game.js'
-//import './App.css';
+
 import {FetchApi} from './fetch.js';
 import React from 'react'
 

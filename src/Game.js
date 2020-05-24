@@ -15,40 +15,6 @@ class Game extends React.Component {
         }
     }
 
-
-    // async deleteGameById(gameID) {
-    //     const response = await fetch(`${this.url}/${gameID}`, {
-    //         method: "DELETE"
-    //     })
-    //     return response.text()
-    // }
-    // deleteGame=(event)=>{
-    //   event.preventDefault()
-    //   event.target.parentElement.remove();
-    //    console.log(event)
-    //    this.deleteGameById( this.state.data._id)
-    //    console.log(this.state.data)
-    // }
-
-    // } 
-    //  submit(){
-    //      console.log(this.state)
-    //      let data=this.state
-    //      fetch(url,{
-    //          method:'POST',
-    //          headers:{
-    //              "Content-Type":"application/json",
-    //              "Accept":"application/json"
-    //          },
-    //          body:JSON.stringify(data)
-    //      }).then ((result)=>{
-    //          result.json().then((resp)=>{
-    //              this.setState(resp)
-    //          })
-    //      })
-    //  }
-
-
     deleteGame = () => {
         const { onDelete, id } = this.props;
         if (onDelete) {
